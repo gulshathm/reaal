@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .registration-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .registration-links a {
+            display: block;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .registration-links a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Links</h2>
+        <div class="registration-links">
+            <a href="{% url 'register' %}">Company Register</a>
+            <a href="{% url 'client_register' %}">Client Register</a>
+        </div>
+    </div>
+</body>
+</html>
